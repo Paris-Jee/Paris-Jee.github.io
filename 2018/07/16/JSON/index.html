@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>php变量 | 纪国锐</title>
+  <title>JSON | 纪国锐</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
     <meta name="keywords" content="Paris-Jee's Blog" />
   
-  <meta name="description" content="变量在程序执行期间，可以变化的量。    声明变量：在php中是以$符加上变量名称 如 $a变量的名称以字母或者下划线开始，后面呢可以跟上数字、字母、下划线，这样的形式。不要包含特殊字符，什么是特殊字符呢？空格啊、叹号、*号啊、问号啊这样的都是我们的特殊字符   变量名称，严格区分大小写，什么意思呢，$a 和 $A 这是两个变量当变量名称重复的时候，相当于变量重新赋值了，后面的会覆盖之前的值php">
-<meta name="keywords" content="PHP 变量">
+  <meta name="description" content="JSON JSON，全称是 JavaScript Object Notation，即 JavaScript 对象标记法。   JSON 是一种轻量级（Light-Weight）、基于文本的（Text-Based）、可读的（Human-Readable）格式。   JSON 的名称中虽然带有 JavaScript，但这是指其语法规则是参考 JavaScript 对象的，而不是指只能用于 JavaSc">
+<meta name="keywords" content="JSON">
 <meta property="og:type" content="article">
-<meta property="og:title" content="php变量">
-<meta property="og:url" content="http://paris-jee.github.io/2018/07/05/PHP变量/index.html">
+<meta property="og:title" content="JSON">
+<meta property="og:url" content="http://paris-jee.github.io/2018/07/16/JSON/index.html">
 <meta property="og:site_name" content="纪国锐">
-<meta property="og:description" content="变量在程序执行期间，可以变化的量。    声明变量：在php中是以$符加上变量名称 如 $a变量的名称以字母或者下划线开始，后面呢可以跟上数字、字母、下划线，这样的形式。不要包含特殊字符，什么是特殊字符呢？空格啊、叹号、*号啊、问号啊这样的都是我们的特殊字符   变量名称，严格区分大小写，什么意思呢，$a 和 $A 这是两个变量当变量名称重复的时候，相当于变量重新赋值了，后面的会覆盖之前的值php">
+<meta property="og:description" content="JSON JSON，全称是 JavaScript Object Notation，即 JavaScript 对象标记法。   JSON 是一种轻量级（Light-Weight）、基于文本的（Text-Based）、可读的（Human-Readable）格式。   JSON 的名称中虽然带有 JavaScript，但这是指其语法规则是参考 JavaScript 对象的，而不是指只能用于 JavaSc">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-04T23:22:50.524Z">
+<meta property="og:updated_time" content="2018-07-16T03:47:36.859Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="php变量">
-<meta name="twitter:description" content="变量在程序执行期间，可以变化的量。    声明变量：在php中是以$符加上变量名称 如 $a变量的名称以字母或者下划线开始，后面呢可以跟上数字、字母、下划线，这样的形式。不要包含特殊字符，什么是特殊字符呢？空格啊、叹号、*号啊、问号啊这样的都是我们的特殊字符   变量名称，严格区分大小写，什么意思呢，$a 和 $A 这是两个变量当变量名称重复的时候，相当于变量重新赋值了，后面的会覆盖之前的值php">
+<meta name="twitter:title" content="JSON">
+<meta name="twitter:description" content="JSON JSON，全称是 JavaScript Object Notation，即 JavaScript 对象标记法。   JSON 是一种轻量级（Light-Weight）、基于文本的（Text-Based）、可读的（Human-Readable）格式。   JSON 的名称中虽然带有 JavaScript，但这是指其语法规则是参考 JavaScript 对象的，而不是指只能用于 JavaSc">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -110,14 +110,14 @@
     </div>
 </header>
       <div class="outer">
-        <section id="main" class="body-wrap"><article id="post-PHP变量" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main" class="body-wrap"><article id="post-JSON" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="post-title" itemprop="name">
-      php变量
+      JSON
     </h1>
     <div class="post-title-bar">
       <ul>
@@ -125,12 +125,12 @@
               <li>
                   <i class="fa fa-book"></i>
                   
-                      <a href="/categories/PHP/">PHP</a>
+                      <a href="/categories/JSON/">JSON</a>
                   
               </li>
           
         <li>
-          <i class="fa fa-calendar"></i>  2018-07-05
+          <i class="fa fa-calendar"></i>  2018-07-16
         </li>
         <li>
           <i class="fa fa-eye"></i>
@@ -146,22 +146,43 @@
     <div class="article-entry post-content" itemprop="articleBody">
       
             
-            <h1 id="变量"><a href="#变量" class="headerlink" title="变量"></a>变量</h1><p>在程序执行期间，可以变化的量。  </p>
-<ol>
-<li>声明变量：在php中是以$符加上变量名称 如 $a<br>变量的名称以<strong>字母</strong>或者<strong>下划线</strong>开始，后面呢可以跟上<strong>数字</strong>、<strong>字母</strong>、<strong>下划线</strong>，这样的形式。<br>不要包含特殊字符，什么是特殊字符呢？空格啊、叹号、*号啊、问号啊这样的都是我们的特殊字符  </li>
-<li>变量名称，<strong>严格区分大小写</strong>，什么意思呢，$a 和 $A 这是两个变量<br>当变量名称重复的时候，相当于变量重新赋值了，后面的会覆盖之前的值<br>php是弱类型语言,像Java，c 变量一定要声明之后才能使用，而弱类型语言比较松散，变量可以不用声明直接使用  </li>
-<li><p>可变变量  </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">    //可变变量的例子</span><br><span class="line">    $a=&apos;b&apos;;</span><br><span class="line">    $b=&apos;c&apos;;</span><br><span class="line">    $c=&apos;d&apos;;</span><br><span class="line">    echo $$$a;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>引用赋值  </p>
-</li>
-<li>销毁变量<br>函数unset($var):注销变量    </li>
+            <h1 id="JSON"><a href="#JSON" class="headerlink" title="JSON"></a>JSON</h1><ol>
+<li>JSON，全称是 JavaScript Object Notation，即 JavaScript 对象标记法。  </li>
+<li>JSON 是一种轻量级（Light-Weight）、基于文本的（Text-Based）、可读的（Human-Readable）格式。  </li>
+<li>JSON 的名称中虽然带有 JavaScript，但这是指其语法规则是参考 JavaScript 对象的，而不是指只能用于 JavaScript 语言。  </li>
+<li>JSON 无论对于人，还是对于机器来说，都是十分便于阅读和书写的，而且相比 XML （另一种常见的数据交换格式），文件更小，因此迅速成为网络上十分流行的交换格式。  </li>
 </ol>
+<hr>
+<h2 id="json-语法规则"><a href="#json-语法规则" class="headerlink" title="json 语法规则"></a>json 语法规则</h2><p>1）- 数组（Array）用方括号(“[]”)表示。</p>
+<p>2）- 对象（Object）用大括号（”{}”）表示。</p>
+<p>3）- 名称/值对（name/value）组合成数组和对象。</p>
+<p>4）- 名称（name）置于双引号中，值（value）有字符串、数值、布尔值、null、对象和数组。名称/值对（name/value）之间用冒号（”：”）隔开。</p>
+<p>5）- 并列的数据之间用逗号（“,”）分隔</p>
+<p>实例</p>
+<p><code><br>{</code></p>
+<p>“name”: “Geoff Lui”,</p>
+<p>“age”: 26</p>
+<p>}<br></p>
+<hr>
+<h2 id="json-amp-xml"><a href="#json-amp-xml" class="headerlink" title="json &amp; xml"></a>json &amp; xml</h2><p>JSON 常被拿来与 XML 做比较，因为 JSON 的诞生本来就多多少少要有取代 XML 的意思。相比 XML，JSON 的优势如下：</p>
+<p>1）- 没有结束标签，长度更短，读写更快</p>
+<p>2）- 能够直接被 JavaScript 解释器解析</p>
+<p>3）- 可以使用数组</p>
+<p>对比JSON和XML，比较相同与相异之处<br>  json<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line"></span><br><span class="line">&quot;name&quot;: &quot;parisjee&quot;,</span><br><span class="line"></span><br><span class="line">&quot;age&quot;: 23,</span><br><span class="line"></span><br><span class="line">&quot;friends&quot;: [&quot;Lily&quot;, &quot;Lucy&quot;, &quot;zero&quot;]</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>xml<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;root&gt;</span><br><span class="line"></span><br><span class="line">&lt;name&gt;parisjee&lt;/name&gt;</span><br><span class="line"></span><br><span class="line">&lt;age&gt;23&lt;/age&gt;</span><br><span class="line"></span><br><span class="line">&lt;friends&gt;Lily&lt;/friends&gt;</span><br><span class="line"></span><br><span class="line">&lt;friends&gt;Lucy&lt;/friends&gt;</span><br><span class="line"></span><br><span class="line">&lt;friends&gt;zero&lt;/friends&gt;</span><br><span class="line"></span><br><span class="line">&lt;/root&gt;</span><br><span class="line">```  </span><br><span class="line">## json 解析与生成  </span><br><span class="line">在 JavaScript 中，有两个方法与此相关： **JSON.parse** 和 **JSON.stringify** 。</span><br></pre></td></tr></table></figure></p>
+<script>
+
+<p>var str = ‘{“name”: “Geoff Lui”,”age”: 26,}’;</p>
+<p>var obj = ISON.parse(str);</p>
+<p>console.log(obj);</p>
+<p>var jsonstr = ISON.stringify(obj);</p>
+<p>console.log(jsonstr);</p>
+<p></script><br><code>`</code><p></p>
 
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年07月05日 07:22</p>
-        <p>原始链接： <a class="post-url" href="/2018/07/05/PHP变量/" title="php变量">http://paris-jee.github.io/2018/07/05/PHP变量/</a></p>
+        <p>最后更新： 2018年07月16日 11:47</p>
+        <p>原始链接： <a class="post-url" href="/2018/07/16/JSON/" title="JSON">http://paris-jee.github.io/2018/07/16/JSON/</a></p>
         <footer>
             <a href="http://paris-jee.github.io">
                 <img src="/images/logo1.png" alt="Paris Jee">
@@ -187,7 +208,7 @@
     <div class="post-share-list" id="share-list">
         <ul class="share-icons">
           <li>
-            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://paris-jee.github.io/2018/07/05/PHP变量/&title=《php变量》 — 纪国锐&pic=images/1-2.jpg" data-title="微博">
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://paris-jee.github.io/2018/07/16/JSON/&title=《JSON》 — 纪国锐&pic=images/1-4.jpg" data-title="微博">
               <i class="fa fa-weibo"></i>
             </a>
           </li>
@@ -197,22 +218,22 @@
             </a>
           </li>
           <li>
-            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://paris-jee.github.io/2018/07/05/PHP变量/&title=《php变量》 — 纪国锐&source=" data-title="QQ">
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://paris-jee.github.io/2018/07/16/JSON/&title=《JSON》 — 纪国锐&source=" data-title="QQ">
               <i class="fa fa-qq"></i>
             </a>
           </li>
           <li>
-            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://paris-jee.github.io/2018/07/05/PHP变量/" data-title="Facebook">
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://paris-jee.github.io/2018/07/16/JSON/" data-title="Facebook">
               <i class="fa fa-facebook"></i>
             </a>
           </li>
           <li>
-            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《php变量》 — 纪国锐&url=http://paris-jee.github.io/2018/07/05/PHP变量/&via=http://paris-jee.github.io" data-title="Twitter">
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《JSON》 — 纪国锐&url=http://paris-jee.github.io/2018/07/16/JSON/&via=http://paris-jee.github.io" data-title="Twitter">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
           <li>
-            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://paris-jee.github.io/2018/07/05/PHP变量/" data-title="Google+">
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://paris-jee.github.io/2018/07/16/JSON/" data-title="Google+">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -222,7 +243,7 @@
 <div class="post-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;" id="wxShare-close">×</a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://paris-jee.github.io/2018/07/05/PHP变量/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://paris-jee.github.io/2018/07/16/JSON/" alt="微信分享二维码">
 </div>
 
 <div class="mask"></div>
@@ -234,7 +255,7 @@
   <li class="article-footer-tags">
     <i class="fa fa-tags"></i>
       
-    <a href="/tags/PHP变量/" class="color2">PHP 变量</a>
+    <a href="/tags/JSON/" class="color5">JSON</a>
       
   </li>
 
@@ -247,26 +268,16 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#变量"><span class="post-toc-text">变量</span></a></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#JSON"><span class="post-toc-text">JSON</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#json-语法规则"><span class="post-toc-text">json 语法规则</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#json-amp-xml"><span class="post-toc-text">json &amp; xml</span></a></li></ol></li></ol>
         </nav>
     </aside>
     
 
 <nav id="article-nav">
   
-    <a href="/2018/07/05/常量/" id="article-nav-newer" class="article-nav-link-wrap">
-
-      <span class="article-nav-title">
-        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
-        
-          常量
-        
-      </span>
-    </a>
   
-  
-    <a href="/2018/06/10/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <span class="article-nav-title">Hello World</span>
+    <a href="/2018/07/05/常量/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">常量</span>
       <i class="fa fa-hand-o-right" aria-hidden="true"></i>
     </a>
   
