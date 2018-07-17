@@ -3,23 +3,23 @@
 <head>
   <meta charset="utf-8">
   
-  <title>json 语法 | 纪国锐</title>
+  <title>Linux 文件系统 | 纪国锐</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
     <meta name="keywords" content="Paris-Jee's Blog" />
   
-  <meta name="description" content="json 语法1）- 数组（Array）用方括号(“[]”)表示。 2）- 对象（Object）用大括号（”{}”）表示。 3）- 名称/值对（name/value）之间用冒号（”：”）隔开。 4）- 名称（name）置于双引号中，值（value）有字符串、数值、布尔值、null、对象和数组。 5）- 并列的数据之间用逗号（“,”）分隔   对象1、对象用大括号（“{}”）括起来，大括号里是一系列">
-<meta name="keywords" content="JSON">
+  <meta name="description" content="Linux 文件系统文件系统概述 文件系统是一种组织计算机文件和资料的方法；   操作系统中封装的系统服务程序，实际上是一个软件程序，用来存储和管理计算机文件和资料。  文件系统分类 磁盘文件系统：NTFS（Windows下），EXT3（linux下，基于日志）；   闪存文件系统（u盘）：JFFS2，YAFFS；   数据库文件系统：BFFS，WINFS；   网络文件系统：NFS；   虚拟文">
+<meta name="keywords" content="-Linux -文件系统">
 <meta property="og:type" content="article">
-<meta property="og:title" content="json 语法">
-<meta property="og:url" content="http://paris-jee.github.io/2018/07/16/json-语法/index.html">
+<meta property="og:title" content="Linux 文件系统">
+<meta property="og:url" content="http://paris-jee.github.io/2018/07/17/Linux-文件系统/index.html">
 <meta property="og:site_name" content="纪国锐">
-<meta property="og:description" content="json 语法1）- 数组（Array）用方括号(“[]”)表示。 2）- 对象（Object）用大括号（”{}”）表示。 3）- 名称/值对（name/value）之间用冒号（”：”）隔开。 4）- 名称（name）置于双引号中，值（value）有字符串、数值、布尔值、null、对象和数组。 5）- 并列的数据之间用逗号（“,”）分隔   对象1、对象用大括号（“{}”）括起来，大括号里是一系列">
+<meta property="og:description" content="Linux 文件系统文件系统概述 文件系统是一种组织计算机文件和资料的方法；   操作系统中封装的系统服务程序，实际上是一个软件程序，用来存储和管理计算机文件和资料。  文件系统分类 磁盘文件系统：NTFS（Windows下），EXT3（linux下，基于日志）；   闪存文件系统（u盘）：JFFS2，YAFFS；   数据库文件系统：BFFS，WINFS；   网络文件系统：NFS；   虚拟文">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2018-07-16T04:01:08.141Z">
+<meta property="og:updated_time" content="2018-07-17T03:00:14.303Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="json 语法">
-<meta name="twitter:description" content="json 语法1）- 数组（Array）用方括号(“[]”)表示。 2）- 对象（Object）用大括号（”{}”）表示。 3）- 名称/值对（name/value）之间用冒号（”：”）隔开。 4）- 名称（name）置于双引号中，值（value）有字符串、数值、布尔值、null、对象和数组。 5）- 并列的数据之间用逗号（“,”）分隔   对象1、对象用大括号（“{}”）括起来，大括号里是一系列">
+<meta name="twitter:title" content="Linux 文件系统">
+<meta name="twitter:description" content="Linux 文件系统文件系统概述 文件系统是一种组织计算机文件和资料的方法；   操作系统中封装的系统服务程序，实际上是一个软件程序，用来存储和管理计算机文件和资料。  文件系统分类 磁盘文件系统：NTFS（Windows下），EXT3（linux下，基于日志）；   闪存文件系统（u盘）：JFFS2，YAFFS；   数据库文件系统：BFFS，WINFS；   网络文件系统：NFS；   虚拟文">
   
   
     <link rel="icon" href="/favicon.ico">
@@ -110,20 +110,27 @@
     </div>
 </header>
       <div class="outer">
-        <section id="main" class="body-wrap"><article id="post-json-语法" class="article article-type-post" itemscope itemprop="blogPost">
+        <section id="main" class="body-wrap"><article id="post-Linux-文件系统" class="article article-type-post" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 class="post-title" itemprop="name">
-      json 语法
+      Linux 文件系统
     </h1>
     <div class="post-title-bar">
       <ul>
           
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/Linux/">Linux</a>
+                  
+              </li>
+          
         <li>
-          <i class="fa fa-calendar"></i>  2018-07-16
+          <i class="fa fa-calendar"></i>  2018-07-17
         </li>
         <li>
           <i class="fa fa-eye"></i>
@@ -139,30 +146,41 @@
     <div class="article-entry post-content" itemprop="articleBody">
       
             
-            <h1 id="json-语法"><a href="#json-语法" class="headerlink" title="json 语法"></a>json 语法</h1><p>1）- 数组（Array）用方括号(“[]”)表示。</p>
-<p>2）- 对象（Object）用大括号（”{}”）表示。</p>
-<p>3）- 名称/值对（name/value）之间用冒号（”：”）隔开。</p>
-<p>4）- 名称（name）置于双引号中，值（value）有字符串、数值、布尔值、null、对象和数组。</p>
-<p>5）- 并列的数据之间用逗号（“,”）分隔  </p>
-<h2 id="对象"><a href="#对象" class="headerlink" title="对象"></a>对象</h2><p>1、对象用大括号（“{}”）括起来，大括号里是一系列的“名称/值对”</p>
-<p>2、两个并列的数据之间用逗号（“,”）隔开，注意两点：</p>
-<p>1）- 使用英文的逗号（“,”），不要用中文的逗号（“，”）</p>
-<p>2）- 最后一个“名称/值对“之后不要加逗号</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;“name”:”Lucy”,   //值必须用双引号</span><br><span class="line"></span><br><span class="line">“age”: 25</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+            <h1 id="Linux-文件系统"><a href="#Linux-文件系统" class="headerlink" title="Linux 文件系统"></a>Linux 文件系统</h1><h2 id="文件系统概述"><a href="#文件系统概述" class="headerlink" title="文件系统概述"></a>文件系统概述</h2><ol>
+<li>文件系统是一种组织计算机文件和资料的方法；  </li>
+<li>操作系统中封装的系统服务程序，实际上是一个软件程序，用来存储和管理计算机文件和资料。  <h2 id="文件系统分类"><a href="#文件系统分类" class="headerlink" title="文件系统分类"></a>文件系统分类</h2></li>
+<li>磁盘文件系统：NTFS（Windows下），EXT3（linux下，基于日志）；  </li>
+<li>闪存文件系统（u盘）：JFFS2，YAFFS；  </li>
+<li>数据库文件系统：BFFS，WINFS；  </li>
+<li>网络文件系统：NFS；  </li>
+<li>虚拟文件系统：VFS（Proc）； </li>
+</ol>
+<p><em>虚拟文件系统：在不同的文件系统，它的文件的定义和实现方式都不太一样，所以这些文件的移植性比较困难，虚拟文件系统针对不同的标准定义了一个标准的接口，也就是标准的实现方式，这些不同的标准接口，通过虚拟文件系统进行了一个处理，面向我们用户使用者来说，都是使用的同一个标准，由虚拟文件系统转换成具体的文件系统的方式。</em>  </p>
+<h2 id="文件系统功能"><a href="#文件系统功能" class="headerlink" title="文件系统功能"></a>文件系统功能</h2><ol>
+<li>能定义文件的组织方式：文件结构；  </li>
+<li>提供建立和存取文件的环境：目录和文件；  </li>
+<li>能对文件存储器空间进行组织和分配；  </li>
+<li>负责文件存储并对存入的文件进行保护和检索；  </li>
+<li>负责建立文件，存入、读出、修改、转储文件，控制文件的存取，撤销文件等。  <h2 id="linux文件系统特点"><a href="#linux文件系统特点" class="headerlink" title="linux文件系统特点"></a>linux文件系统特点</h2></li>
+<li>EXT3是基于日志方式的文件系统；<br>系统中每个文件都是有索引，用户对对文件的每一个操作都会记录日志，形成一个任务队列排着执行   （可以监控用户对文件系统的操作，比如：用户在进行操作的时候发生了什么错误，或者类似于崩溃这样的问题，它可以通过得到相应的记录从而进行很好地检修或更改修复，同时把用户的操作记录成日志后，它不会马上去执行，可以 形成一个任务队列排着一个一个执行）， 性能比较好。  </li>
+<li>swap是交换分区的文件系统，类似windows的虚拟内存<br>虚拟内存的实现：两种方式。第一种是进行内存的排列像内存池一样，进行一个优化。第二种是把硬盘上的空间模拟成内存。<br>swap是Linux的虚拟内存，在安装时要设好大小，是物理内存的2倍（安装红帽会进行设置）。  <h3 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h3></li>
+<li>Linux系统中一切皆文件<br>Linux系统把设备(硬盘、软驱、光驱等)都看作文件，文件夹也看作文件（文件没有扩展名）。  </li>
+<li>Linux文件类型<br>普通文件<br>目录文件<br>链接文件<br>块设备<br>字符设备<br>Socket<br>管道文件  </li>
+<li>Linux文件属性（不同的版本可能不同）<br>蓝色：目录<br>绿色：可执行<br>浅蓝色：链接<br>红色：压缩<br>灰色：其他<br><em>Pwd:可以看到当前目录</em><br>### </li>
+</ol>
+<p>根目录下的bin，这里有很多的可执行文件<br>etc目录，这个是配置文件<br>dev：设备目录  </p>
 <hr>
-<h2 id="数组"><a href="#数组" class="headerlink" title="数组"></a>数组</h2><p>数组表示一系列有序的值，用方括号（“[]”）包围起来，并列的值之间用逗号分隔<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">[1,2,[1,2],&#123;“aa”:1&#125;]</span><br></pre></td></tr></table></figure></p>
-<hr>
-<h2 id="名称-值对（Name-Value）"><a href="#名称-值对（Name-Value）" class="headerlink" title="名称/值对（Name/Value）"></a>名称/值对（Name/Value）</h2><p>1、名称（Name）是一个字符串，要用双引号括起来，不能用单引号，也不能没有引号，这一点与 JavaScript 不同。</p>
-<p>2、值的类型只有七种：字符串（string）、数值（number）、对象（object）、数组（array）、true、false、null。不能有这之外的类型，例如 undefined、函数等。请看概念图。</p>
-<p>3、字符串（string）的规则如下：</p>
-<p>1）- 英文双引号括起来，不能用单引号，也不能没有。</p>
-<p>2）- 字符串中不能单独出现双引号（”） 和右斜杠（“\”）。</p>
-<p>3）- 如果要打双引号或右斜杠，需要使用“右斜杠+字符”的形式，例如 \” 和 \，其它的转义字符也是如此</p>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"> &#123;</span><br><span class="line"></span><br><span class="line">“string”:   ”one  two”  //字符串中间不可以加双引号，一定要用的时候，用转义字符“\”</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="文件系统目录"><a href="#文件系统目录" class="headerlink" title="文件系统目录"></a>文件系统目录</h1><p>根目录下有很多子目录，不同的目录有不同的功能：<br>var是存放变量，usr是用户的相关文件，有源文件，可执行文件，需要用到的包含文件，函数库和用户自己的程序等。<br><strong>linux操作系统区分大小写。</strong></p>
+<h2 id="Linux与Windows目录结构的区别"><a href="#Linux与Windows目录结构的区别" class="headerlink" title="Linux与Windows目录结构的区别"></a>Linux与Windows目录结构的区别</h2><ol>
+<li>根目录：Linux：/；Windows：\  </li>
+<li>命名大小写区分：Linux：命名区分大小写；Windows：命名不区分大小写  </li>
+<li>结构管理<br>Linux：磁盘逻辑结构管理物理结构，格式化将磁盘分为很多的文件块区；<br>Windows：物理结构管理逻结构，先分区再格式化建立结构。</li>
+</ol>
+
             <div class="post-copyright">
     <div class="content">
-        <p>最后更新： 2018年07月16日 12:01</p>
-        <p>原始链接： <a class="post-url" href="/2018/07/16/json-语法/" title="json 语法">http://paris-jee.github.io/2018/07/16/json-语法/</a></p>
+        <p>最后更新： 2018年07月17日 11:00</p>
+        <p>原始链接： <a class="post-url" href="/2018/07/17/Linux-文件系统/" title="Linux 文件系统">http://paris-jee.github.io/2018/07/17/Linux-文件系统/</a></p>
         <footer>
             <a href="http://paris-jee.github.io">
                 <img src="/images/logo1.png" alt="Paris Jee">
@@ -188,7 +206,7 @@
     <div class="post-share-list" id="share-list">
         <ul class="share-icons">
           <li>
-            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://paris-jee.github.io/2018/07/16/json-语法/&title=《json 语法》 — 纪国锐&pic=images/1-5.jpg" data-title="微博">
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://paris-jee.github.io/2018/07/17/Linux-文件系统/&title=《Linux 文件系统》 — 纪国锐&pic=images/1-9.jpg" data-title="微博">
               <i class="fa fa-weibo"></i>
             </a>
           </li>
@@ -198,22 +216,22 @@
             </a>
           </li>
           <li>
-            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://paris-jee.github.io/2018/07/16/json-语法/&title=《json 语法》 — 纪国锐&source=" data-title="QQ">
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://paris-jee.github.io/2018/07/17/Linux-文件系统/&title=《Linux 文件系统》 — 纪国锐&source=" data-title="QQ">
               <i class="fa fa-qq"></i>
             </a>
           </li>
           <li>
-            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://paris-jee.github.io/2018/07/16/json-语法/" data-title="Facebook">
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://paris-jee.github.io/2018/07/17/Linux-文件系统/" data-title="Facebook">
               <i class="fa fa-facebook"></i>
             </a>
           </li>
           <li>
-            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《json 语法》 — 纪国锐&url=http://paris-jee.github.io/2018/07/16/json-语法/&via=http://paris-jee.github.io" data-title="Twitter">
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《Linux 文件系统》 — 纪国锐&url=http://paris-jee.github.io/2018/07/17/Linux-文件系统/&via=http://paris-jee.github.io" data-title="Twitter">
               <i class="fa fa-twitter"></i>
             </a>
           </li>
           <li>
-            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://paris-jee.github.io/2018/07/16/json-语法/" data-title="Google+">
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://paris-jee.github.io/2018/07/17/Linux-文件系统/" data-title="Google+">
               <i class="fa fa-google-plus"></i>
             </a>
           </li>
@@ -223,7 +241,7 @@
 <div class="post-modal wx-share" id="wxShare">
     <a class="close" href="javascript:;" id="wxShare-close">×</a>
     <p>扫一扫，分享到微信</p>
-    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://paris-jee.github.io/2018/07/16/json-语法/" alt="微信分享二维码">
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://paris-jee.github.io/2018/07/17/Linux-文件系统/" alt="微信分享二维码">
 </div>
 
 <div class="mask"></div>
@@ -235,7 +253,7 @@
   <li class="article-footer-tags">
     <i class="fa fa-tags"></i>
       
-    <a href="/tags/JSON/" class="color5">JSON</a>
+    <a href="/tags/-Linux-文件系统/" class="color3">-Linux -文件系统</a>
       
   </li>
 
@@ -248,26 +266,16 @@
 
     <aside class="post-toc-pos post-toc-top" id="post-toc">
         <nav class="post-toc-wrap">
-            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#json-语法"><span class="post-toc-text">json 语法</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#对象"><span class="post-toc-text">对象</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#数组"><span class="post-toc-text">数组</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#名称-值对（Name-Value）"><span class="post-toc-text">名称/值对（Name/Value）</span></a></li></ol></li></ol>
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Linux-文件系统"><span class="post-toc-text">Linux 文件系统</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#文件系统概述"><span class="post-toc-text">文件系统概述</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#文件系统分类"><span class="post-toc-text">文件系统分类</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#文件系统功能"><span class="post-toc-text">文件系统功能</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#linux文件系统特点"><span class="post-toc-text">linux文件系统特点</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#特点"><span class="post-toc-text">特点</span></a></li></ol></li></ol></li><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#文件系统目录"><span class="post-toc-text">文件系统目录</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Linux与Windows目录结构的区别"><span class="post-toc-text">Linux与Windows目录结构的区别</span></a></li></ol></li></ol>
         </nav>
     </aside>
     
 
 <nav id="article-nav">
   
-    <a href="/2018/07/16/json-转换/" id="article-nav-newer" class="article-nav-link-wrap">
-
-      <span class="article-nav-title">
-        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
-        
-          json 转换
-        
-      </span>
-    </a>
   
-  
-    <a href="/2018/07/16/JSON/" id="article-nav-older" class="article-nav-link-wrap">
-      <span class="article-nav-title">JSON</span>
+    <a href="/2018/07/17/Linux/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">Linux</span>
       <i class="fa fa-hand-o-right" aria-hidden="true"></i>
     </a>
   
