@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>git命令 | 纪国锐</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="Paris-Jee's Blog" />
+  
+  <meta name="description" content="Git命令 Git是一个由林纳斯·托瓦兹为了更好地管理linux内核开发而创立的分布式版本控制／软件配置管理软件。需要注意的是和GNU Interactive Tools，一个类似Norton Commander界面的文件管理器相区分    当安装完Git应该做的第一件事就是设置你的用户名称与邮件地址。 这样做很重要，因为每一个Git的提交都会使用这些信息，并且它会写入到你的每一次提交中，不可更改">
+<meta name="keywords" content="-git -命令">
+<meta property="og:type" content="article">
+<meta property="og:title" content="git命令">
+<meta property="og:url" content="http://paris-jee.github.io/2018/07/23/git命令/index.html">
+<meta property="og:site_name" content="纪国锐">
+<meta property="og:description" content="Git命令 Git是一个由林纳斯·托瓦兹为了更好地管理linux内核开发而创立的分布式版本控制／软件配置管理软件。需要注意的是和GNU Interactive Tools，一个类似Norton Commander界面的文件管理器相区分    当安装完Git应该做的第一件事就是设置你的用户名称与邮件地址。 这样做很重要，因为每一个Git的提交都会使用这些信息，并且它会写入到你的每一次提交中，不可更改">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-23T10:25:32.608Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="git命令">
+<meta name="twitter:description" content="Git命令 Git是一个由林纳斯·托瓦兹为了更好地管理linux内核开发而创立的分布式版本控制／软件配置管理软件。需要注意的是和GNU Interactive Tools，一个类似Norton Commander界面的文件管理器相区分    当安装完Git应该做的第一件事就是设置你的用户名称与邮件地址。 这样做很重要，因为每一个Git的提交都会使用这些信息，并且它会写入到你的每一次提交中，不可更改">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">纪国锐</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <a  href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a  href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo1.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        纪国锐
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        个人博客
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="parisjee" target="_blank" href="//lilyzero.com">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/paris-jee">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="//weibo.com/jigrui">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="Twitter" target="_blank" href="//twitter.com/xiaolan1234">
+                            <i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-git命令" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      git命令
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/git/">git</a>
+                  
+              </li>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2018-07-23
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <h1 id="Git命令"><a href="#Git命令" class="headerlink" title="Git命令"></a>Git命令</h1><blockquote>
+<p>Git是一个由林纳斯·托瓦兹为了更好地管理linux内核开发而创立的分布式版本控制／软件配置管理软件。需要注意的是和GNU Interactive Tools，一个类似Norton Commander界面的文件管理器相区分  </p>
+</blockquote>
+<p>当安装完Git应该做的第一件事就是设置你的用户名称与邮件地址。 这样做很重要，因为每一个Git的提交都会使用这些信息，并且它会写入到你的每一次提交中，不可更改  </p>
+<p>git config –global user.name “paris”<br>git config –global user.email “<a href="mailto:paris@example.com" target="_blank" rel="noopener">paris@example.com</a>“</p>
+<p><em>再次强调，如果使用了 –global 选项，那么该命令只需要运行一次，因为之后无论你在该系统上做任何事情， Git 都会使用那些信息。 当你想针对特定项目使用不同的用户名称与邮件地址时，可以在那个项目目录下运行没有 –global 选项的命令来配置</em>  </p>
+<blockquote>
+<p>git init 初始化仓库<br>git add 添加文件到暂存区<br>git commit 提交文件到仓库<br>git diff 比对本地和版本库里面的文件<br>git log 查看历史提交记录  </p>
+</blockquote>
+<ul>
+<li>初始化一个Git仓库，使用git init命令。<br>第一步，使用命令git add .,添加全部 ，注意，可反复多次使用，添加多个文件；<br>第二步，使用命令git commit -m “提交的注释”，完成。  </li>
+<li>第一步是用git add把文件添加进去，实际上就是把文件修改添加到暂存区；<br>第二步是用git commit提交更改，实际上就是把暂存区的所有内容提交到当前分支。  </li>
+<li>在修改了文件之后，且还没有add之前，可执行以下命令丢弃工作区的修改。<br>$ git checkout –- readme.txt<br>git checkout – file命令中的–很重要，没有–，就变成了“切换到另一个分支”的命令，我们在后面的分支管理中会再次遇到git checkout命令  </li>
+<li>如果你想要修改，已经git add到暂存区，但还没有commit的内容。<br>我们可以用命令git reset HEAD file可以把暂存区的修改撤销掉（unstage），重新放回工作区：<br>$ git reset HEAD readme.txt<blockquote>
+<p>git init //初始化本地仓库<br>git add //添加文件<br>git status //查看状态<br>git commit //提交<br>git push //推送到仓库<br>git pull //从远程仓库拉取数据<br>git clone //从远程仓库拷贝数据  </p>
+</blockquote>
+<h2 id="git-操作"><a href="#git-操作" class="headerlink" title="git 操作"></a>git 操作</h2>touch .gitignore 创建git忽略文件，在其中写入要忽略的文件。忽略文件夹请使用文件夹名称<br>git branch login 创建分支<br>git checkout login 切换分支<br>touch login.html<br>git add . 上传到当前分支<br>git remote add origin 远程仓库地址<br>git remote 检查连接<br>git push -u origin master 上传  </li>
+</ul>
+
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2018年07月23日 18:25</p>
+        <p>原始链接： <a class="post-url" href="/2018/07/23/git命令/" title="git命令">http://paris-jee.github.io/2018/07/23/git命令/</a></p>
+        <footer>
+            <a href="http://paris-jee.github.io">
+                <img src="/images/logo1.png" alt="Paris Jee">
+                Paris Jee
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+        
+            
+
+        
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://paris-jee.github.io/2018/07/23/git命令/&title=《git命令》 — 纪国锐&pic=images/1-12.jpg" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://paris-jee.github.io/2018/07/23/git命令/&title=《git命令》 — 纪国锐&source=" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://paris-jee.github.io/2018/07/23/git命令/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《git命令》 — 纪国锐&url=http://paris-jee.github.io/2018/07/23/git命令/&via=http://paris-jee.github.io" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://paris-jee.github.io/2018/07/23/git命令/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://paris-jee.github.io/2018/07/23/git命令/" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/-git-命令/" class="color4">-git -命令</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#Git命令"><span class="post-toc-text">Git命令</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#git-操作"><span class="post-toc-text">git 操作</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+
+<nav id="article-nav">
+  
+    <a href="/2018/07/23/Composer/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          Composer
+        
+      </span>
+    </a>
+  
+  
+    <a href="/2018/07/23/php设计模式/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">php设计模式</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2018 Paris Jee<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "http://paris-jee.github.io",
+      animate: true,
+      isHome: false,
+      share: true,
+      reward: 2
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            <a class="category-link" href="/categories/HTTP/">HTTP</a><a class="category-link" href="/categories/JSON/">JSON</a><a class="category-link" href="/categories/Linux/">Linux</a><a class="category-link" href="/categories/PHP/">PHP</a><a class="category-link" href="/categories/ajax/">ajax</a><a class="category-link" href="/categories/git/">git</a><a class="category-link" href="/categories/mysql/">mysql</a><a class="category-link" href="/categories/php/">php</a><a class="category-link" href="/categories/协议/">协议</a><a class="category-link" href="/categories/数据库/">数据库</a>
+        </div>
+        <div id="sidebar-menu-box-tags">
+            <a href="/tags/HTTP协议/" style="font-size: 10px;">-HTTP协议</a> <a href="/tags/Linux/" style="font-size: 10px;">-Linux</a> <a href="/tags/Linux-文件系统/" style="font-size: 10px;">-Linux -文件系统</a> <a href="/tags/Linux命令/" style="font-size: 10px;">-Linux命令</a> <a href="/tags/PHP-设计模式/" style="font-size: 10px;">-PHP -设计模式</a> <a href="/tags/git-命令/" style="font-size: 10px;">-git -命令</a> <a href="/tags/协议-TCP-IP/" style="font-size: 10px;">-协议 -TCP/IP</a> <a href="/tags/数据库-MySQL/" style="font-size: 10px;">-数据库 -MySQL</a> <a href="/tags/面向对象/" style="font-size: 10px;">-面向对象</a> <a href="/tags/JSON/" style="font-size: 20px;">JSON</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/PHP-变量/" style="font-size: 10px;">PHP 变量</a> <a href="/tags/PHP-常量/" style="font-size: 10px;">PHP 常量</a> <a href="/tags/ajax-php/" style="font-size: 10px;">ajax php</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/php-Composer/" style="font-size: 10px;">php Composer</a> <a href="/tags/基本概念/" style="font-size: 10px;">基本概念</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a  href="/">
+                    <i class="fa fa-home"></i><span>Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/archives">
+                    <i class="fa fa-archive"></i><span>Archives</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/about">
+                    <i class="fa fa-user"></i><span>About</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            <a href="/tags/HTTP协议/" style="font-size: 10px;">-HTTP协议</a> <a href="/tags/Linux/" style="font-size: 10px;">-Linux</a> <a href="/tags/Linux-文件系统/" style="font-size: 10px;">-Linux -文件系统</a> <a href="/tags/Linux命令/" style="font-size: 10px;">-Linux命令</a> <a href="/tags/PHP-设计模式/" style="font-size: 10px;">-PHP -设计模式</a> <a href="/tags/git-命令/" style="font-size: 10px;">-git -命令</a> <a href="/tags/协议-TCP-IP/" style="font-size: 10px;">-协议 -TCP/IP</a> <a href="/tags/数据库-MySQL/" style="font-size: 10px;">-数据库 -MySQL</a> <a href="/tags/面向对象/" style="font-size: 10px;">-面向对象</a> <a href="/tags/JSON/" style="font-size: 20px;">JSON</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/PHP-变量/" style="font-size: 10px;">PHP 变量</a> <a href="/tags/PHP-常量/" style="font-size: 10px;">PHP 常量</a> <a href="/tags/ajax-php/" style="font-size: 10px;">ajax php</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/php-Composer/" style="font-size: 10px;">php Composer</a> <a href="/tags/基本概念/" style="font-size: 10px;">基本概念</a>
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+
+  <script src="/js/pop-img.js"></script>
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+
+  </div>
+</body>
+</html>

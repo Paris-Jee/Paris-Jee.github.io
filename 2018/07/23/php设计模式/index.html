@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>php设计模式 | 纪国锐</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="Paris-Jee's Blog" />
+  
+  <meta name="description" content="php设计模式设计模式是面向对象编程的经验总结和最佳实践  Descriptions of communicating objects and classes that are customized to solve a general design problem in a particular context.翻译就是说为解决特定上下文中的一般设计问题而定制的通信对象和类的说明。通俗的说，设计">
+<meta name="keywords" content="-PHP -设计模式">
+<meta property="og:type" content="article">
+<meta property="og:title" content="php设计模式">
+<meta property="og:url" content="http://paris-jee.github.io/2018/07/23/php设计模式/index.html">
+<meta property="og:site_name" content="纪国锐">
+<meta property="og:description" content="php设计模式设计模式是面向对象编程的经验总结和最佳实践  Descriptions of communicating objects and classes that are customized to solve a general design problem in a particular context.翻译就是说为解决特定上下文中的一般设计问题而定制的通信对象和类的说明。通俗的说，设计">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-23T09:26:50.959Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="php设计模式">
+<meta name="twitter:description" content="php设计模式设计模式是面向对象编程的经验总结和最佳实践  Descriptions of communicating objects and classes that are customized to solve a general design problem in a particular context.翻译就是说为解决特定上下文中的一般设计问题而定制的通信对象和类的说明。通俗的说，设计">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">纪国锐</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <a  href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a  href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo1.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        纪国锐
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        个人博客
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="parisjee" target="_blank" href="//lilyzero.com">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/paris-jee">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="//weibo.com/jigrui">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="Twitter" target="_blank" href="//twitter.com/xiaolan1234">
+                            <i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-php设计模式" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      php设计模式
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/PHP/">PHP</a>
+                  
+              </li>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2018-07-23
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <h1 id="php设计模式"><a href="#php设计模式" class="headerlink" title="php设计模式"></a>php设计模式</h1><p><strong>设计模式是面向对象编程的经验总结和最佳实践</strong></p>
+<blockquote>
+<p>Descriptions of communicating objects and classes that are customized to solve a general design problem in a particular context.<br>翻译就是说为解决特定上下文中的一般设计问题而定制的通信对象和类的说明。<br>通俗的说，设计模式是一种编码规则，是从宏观上思考为实现特定功能或者系统而设计的代码组织方式。就像一群人完成某一项工作，不能一窝蜂全上，需要有组织有纪律，这个组织和纪律就是设计模式的概念。  </p>
+<ul>
+<li>作用：灵活正确的使用设计模式，能够让系统的开发速度快，代码复用性高，容易维护，扩展性强，并且利于团队协作。  </li>
+</ul>
+</blockquote>
+<h2 id="类别"><a href="#类别" class="headerlink" title="类别"></a>类别</h2><ol>
+<li>创建型<br>在软件工程中，创建型设计模式是处理对象创建机制的设计模式，试图以适当的方式来创建对象。对象创建的基本形式可能会带来设计问题，亦或增加了设计的复杂度。创建型设计模式通过控制这个对象的创建方式来解决此问题。</li>
+</ol>
+<ul>
+<li>抽象工厂模式（Abstract Factory）  </li>
+<li>建造者模式（Builder）</li>
+<li>工厂方法模式（Factory Method）  </li>
+<li>多例模式（Multiton） </li>
+<li>对象池模式（Pool）  </li>
+<li>原型模式（Prototype）  </li>
+<li>简单工厂模式（Simple Factory）  </li>
+<li>单例模式（Singleton）  </li>
+<li>静态工厂模式（Static Factory）  </li>
+</ul>
+<ol start="2">
+<li>结构型<br>在软件工程中，结构型设计模式是通过识别实体之间关系来简化设计的设计模式。</li>
+</ol>
+<ul>
+<li>适配器模式（Adapter）  </li>
+<li>桥梁模式（Bridge）  </li>
+<li>组合模式（Composite）  </li>
+<li>数据映射模式（Data Mapper）  </li>
+<li>装饰模式（Decorator） </li>
+<li>依赖注入模式（Dependency Injection）  </li>
+<li>门面模式（Facade）  </li>
+<li>流接口模式（Fluent Interface）  </li>
+<li>享元模式（Flyweight）  </li>
+<li>代理模式（Proxy）  </li>
+<li>注册模式（Registry）  </li>
+</ul>
+<ol start="3">
+<li>行为型<br>在软件工程中，行为设计模式是识别对象之间的通用通信模式并实现这些模式的设计模式。 通过这样做，这些模式增加了执行此通信的灵活性。  </li>
+</ol>
+<ul>
+<li>责任链模式（Chain Of Responsibilities）  </li>
+<li>命令行模式（Command）   </li>
+<li>迭代器模式（Iterator）  </li>
+<li>中介者模式（Mediator）  </li>
+<li>备忘录模式（Memento）  </li>
+<li>空对象模式（Null Object）  </li>
+<li>观察者模式（Observer）  </li>
+<li>规格模式（Specification）  </li>
+<li>状态模式（State）  </li>
+<li>策略模式（Strategy）  </li>
+<li>模板方法模式（Template Method）  </li>
+<li>访问者模式（Visitor）  </li>
+</ul>
+<ol start="4">
+<li>其他类型  </li>
+</ol>
+<ul>
+<li>委托模式（Delegation）  </li>
+<li>服务定位器模式（Service Locator）  </li>
+<li>资源库模式（Repository）  </li>
+<li>实体属性值模式（EAV 模式）  </li>
+</ul>
+
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2018年07月23日 17:26</p>
+        <p>原始链接： <a class="post-url" href="/2018/07/23/php设计模式/" title="php设计模式">http://paris-jee.github.io/2018/07/23/php设计模式/</a></p>
+        <footer>
+            <a href="http://paris-jee.github.io">
+                <img src="/images/logo1.png" alt="Paris Jee">
+                Paris Jee
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+        
+            
+
+        
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://paris-jee.github.io/2018/07/23/php设计模式/&title=《php设计模式》 — 纪国锐&pic=images/1-13.jpg" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://paris-jee.github.io/2018/07/23/php设计模式/&title=《php设计模式》 — 纪国锐&source=" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://paris-jee.github.io/2018/07/23/php设计模式/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《php设计模式》 — 纪国锐&url=http://paris-jee.github.io/2018/07/23/php设计模式/&via=http://paris-jee.github.io" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://paris-jee.github.io/2018/07/23/php设计模式/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://paris-jee.github.io/2018/07/23/php设计模式/" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/-PHP-设计模式/" class="color1">-PHP -设计模式</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#php设计模式"><span class="post-toc-text">php设计模式</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#类别"><span class="post-toc-text">类别</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+
+<nav id="article-nav">
+  
+    <a href="/2018/07/23/git命令/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          git命令
+        
+      </span>
+    </a>
+  
+  
+    <a href="/2018/07/22/TCP IP/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">TCP/IP</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2018 Paris Jee<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "http://paris-jee.github.io",
+      animate: true,
+      isHome: false,
+      share: true,
+      reward: 2
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            <a class="category-link" href="/categories/HTTP/">HTTP</a><a class="category-link" href="/categories/JSON/">JSON</a><a class="category-link" href="/categories/Linux/">Linux</a><a class="category-link" href="/categories/PHP/">PHP</a><a class="category-link" href="/categories/ajax/">ajax</a><a class="category-link" href="/categories/git/">git</a><a class="category-link" href="/categories/mysql/">mysql</a><a class="category-link" href="/categories/php/">php</a><a class="category-link" href="/categories/协议/">协议</a><a class="category-link" href="/categories/数据库/">数据库</a>
+        </div>
+        <div id="sidebar-menu-box-tags">
+            <a href="/tags/HTTP协议/" style="font-size: 10px;">-HTTP协议</a> <a href="/tags/Linux/" style="font-size: 10px;">-Linux</a> <a href="/tags/Linux-文件系统/" style="font-size: 10px;">-Linux -文件系统</a> <a href="/tags/Linux命令/" style="font-size: 10px;">-Linux命令</a> <a href="/tags/PHP-设计模式/" style="font-size: 10px;">-PHP -设计模式</a> <a href="/tags/git-命令/" style="font-size: 10px;">-git -命令</a> <a href="/tags/协议-TCP-IP/" style="font-size: 10px;">-协议 -TCP/IP</a> <a href="/tags/数据库-MySQL/" style="font-size: 10px;">-数据库 -MySQL</a> <a href="/tags/面向对象/" style="font-size: 10px;">-面向对象</a> <a href="/tags/JSON/" style="font-size: 20px;">JSON</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/PHP-变量/" style="font-size: 10px;">PHP 变量</a> <a href="/tags/PHP-常量/" style="font-size: 10px;">PHP 常量</a> <a href="/tags/ajax-php/" style="font-size: 10px;">ajax php</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/php-Composer/" style="font-size: 10px;">php Composer</a> <a href="/tags/基本概念/" style="font-size: 10px;">基本概念</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a  href="/">
+                    <i class="fa fa-home"></i><span>Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/archives">
+                    <i class="fa fa-archive"></i><span>Archives</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/about">
+                    <i class="fa fa-user"></i><span>About</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            <a href="/tags/HTTP协议/" style="font-size: 10px;">-HTTP协议</a> <a href="/tags/Linux/" style="font-size: 10px;">-Linux</a> <a href="/tags/Linux-文件系统/" style="font-size: 10px;">-Linux -文件系统</a> <a href="/tags/Linux命令/" style="font-size: 10px;">-Linux命令</a> <a href="/tags/PHP-设计模式/" style="font-size: 10px;">-PHP -设计模式</a> <a href="/tags/git-命令/" style="font-size: 10px;">-git -命令</a> <a href="/tags/协议-TCP-IP/" style="font-size: 10px;">-协议 -TCP/IP</a> <a href="/tags/数据库-MySQL/" style="font-size: 10px;">-数据库 -MySQL</a> <a href="/tags/面向对象/" style="font-size: 10px;">-面向对象</a> <a href="/tags/JSON/" style="font-size: 20px;">JSON</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/PHP-变量/" style="font-size: 10px;">PHP 变量</a> <a href="/tags/PHP-常量/" style="font-size: 10px;">PHP 常量</a> <a href="/tags/ajax-php/" style="font-size: 10px;">ajax php</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/php-Composer/" style="font-size: 10px;">php Composer</a> <a href="/tags/基本概念/" style="font-size: 10px;">基本概念</a>
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+
+  <script src="/js/pop-img.js"></script>
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+
+  </div>
+</body>
+</html>

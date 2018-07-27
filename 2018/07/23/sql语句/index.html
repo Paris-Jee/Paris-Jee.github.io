@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>sql语句 | 纪国锐</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="Paris-Jee's Blog" />
+  
+  <meta name="description" content="SQL语句 SQL 是一种为数不多的声明性语言，它的运行方式完全不同于我们所熟知的命令行语言、面向对象的程序语言、甚至是函数语言（尽管有些人认为 SQL 语言也是一种函数式语言）SQL 语句的语法顺序和其执行顺序并不一致    创建一个数据库使用 create database 语句可完成对数据库的创建, 创建命令的格式如下:  create database 数据库名 [其他选项];例如我们需要">
+<meta name="keywords" content="-数据库 -MySQL">
+<meta property="og:type" content="article">
+<meta property="og:title" content="sql语句">
+<meta property="og:url" content="http://paris-jee.github.io/2018/07/23/sql语句/index.html">
+<meta property="og:site_name" content="纪国锐">
+<meta property="og:description" content="SQL语句 SQL 是一种为数不多的声明性语言，它的运行方式完全不同于我们所熟知的命令行语言、面向对象的程序语言、甚至是函数语言（尽管有些人认为 SQL 语言也是一种函数式语言）SQL 语句的语法顺序和其执行顺序并不一致    创建一个数据库使用 create database 语句可完成对数据库的创建, 创建命令的格式如下:  create database 数据库名 [其他选项];例如我们需要">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-23T10:15:35.329Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="sql语句">
+<meta name="twitter:description" content="SQL语句 SQL 是一种为数不多的声明性语言，它的运行方式完全不同于我们所熟知的命令行语言、面向对象的程序语言、甚至是函数语言（尽管有些人认为 SQL 语言也是一种函数式语言）SQL 语句的语法顺序和其执行顺序并不一致    创建一个数据库使用 create database 语句可完成对数据库的创建, 创建命令的格式如下:  create database 数据库名 [其他选项];例如我们需要">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">纪国锐</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <a  href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a  href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo1.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        纪国锐
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        个人博客
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="parisjee" target="_blank" href="//lilyzero.com">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/paris-jee">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="//weibo.com/jigrui">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="Twitter" target="_blank" href="//twitter.com/xiaolan1234">
+                            <i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-sql语句" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      sql语句
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/数据库/">数据库</a>
+                  
+              </li>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2018-07-23
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <h1 id="SQL语句"><a href="#SQL语句" class="headerlink" title="SQL语句"></a>SQL语句</h1><blockquote>
+<p>SQL 是一种为数不多的声明性语言，它的运行方式完全不同于我们所熟知的命令行语言、面向对象的程序语言、甚至是函数语言（尽管有些人认为 SQL 语言也是一种函数式语言）<br><strong>SQL 语句的语法顺序和其执行顺序并不一致</strong>  </p>
+<ol>
+<li>创建一个数据库<br>使用 create database 语句可完成对数据库的创建, 创建命令的格式如下:  <code>create database 数据库名 [其他选项];</code><br>例如我们需要创建一个名为 samp_db 的数据库, 在命令行下执行以下命令:  <code>create database samp_db character set gbk;</code><br>为了便于在命令提示符下显示中文, 在创建时通过 character set gbk 将数据库字符编码指定为 gbk。创建成功<br>时会得到 Query OK, 1 row affected(0.02 sec) 的响应。<br>注意: MySQL语句以分号(;)作为语句的结束, 若在语句结尾不添加分号时, 命令提示符会以 -&gt; 提示你继续输<br>入(有个别特例, 但加分号是一定不会错的);  </li>
+</ol>
+<ul>
+<li>可以使用 show databases; 命令查看已经创建了哪些数据库。  </li>
+</ul>
+<ol start="2">
+<li>选择所要操作的数据库<br>要对一个数据库进行操作, 必须先选择该数据库, 否则会提示错误:<br>ERROR 1046(3D000): No database selected<br>命令: <code>use 数据库名</code>;  </li>
+<li>创建数据库表<br>使用 create table 语句可完成对表的创建, create table 的常见形式:<br><strong>create table 表名称(列声明);</strong><br>以创建 students 表为例, 表中将存放 学号(id)、姓名(name)、性别(sex)、年龄(age)、联系电话(tel) 这些内容:  </li>
+</ol>
+</blockquote>
+<blockquote>
+<p>create table students<br>（<br>id int unsigned not null auto_increment primary key,<br>name char(8) not null,<br>sex char(4) not null,<br>age tinyint unsigned not null,<br>tel char(13) null default “-“<br>);</p>
+<ol start="4">
+<li><strong>向表中插入数据</strong><br>insert 语句可以用来将一行或多行数据插到数据库表中, 使用的一般形式如下:<br><code>insert [into] 表名 [(列名1, 列名2, 列名3, ...)] values (值1, 值2, 值3, ...);</code><br>有时我们只需要插入部分数据, 或者不按照列的顺序进行插入, 可以使用这样的形式进行插入:<br>insert into students (name, sex, age) values(“孙丽华”, “女”, 21);  </li>
+<li><strong>查询表中的数据</strong><br>select 语句常用来根据一定的查询规则到数据库中获取数据, 其基本的用法为:<br><code>select 列名称 from 表名称 [查询条件];</code><br>例如要查询 students 表中所有学生的名字和年龄, 输入语句<br>select name, age from students;  </li>
+<li>更新表中的数据<br>update 语句可用来修改表中的数据, 基本的使用形式为:<br>update 表名称 set 列名称=新值 where 更新条件;<br>example:<br>将 id 为 5 的手机号改为默认的”-“:<br>update students set tel=default where id=5 ;<br>将所有人的年龄增加 1:<br>update students set age=age+1;<br>将手机号为 13288097888 的姓名改为 “张伟鹏”, 年龄改为 19:<br>update students set name=”张伟鹏”, age=19 w<br>here tel=”13288097888” ;  </li>
+<li>删除表中的数据<br>delete 语句用于删除表中的数据, 基本用法为:<br>delete from 表名称 where 删除条件;<br>example:<br>删除 id 为 2 的行:<br>delete from students where id=2 ;<br>删除所有年龄小于 21 岁的数据:<br>delete from students where age&lt;20 ;<br>删除表中的所有数据: delete from students ;  </li>
+</ol>
+</blockquote>
+<h2 id="alter-table-语句用于创建后对表的修改-基础用法如下"><a href="#alter-table-语句用于创建后对表的修改-基础用法如下" class="headerlink" title="alter table 语句用于创建后对表的修改, 基础用法如下"></a>alter table 语句用于创建后对表的修改, 基础用法如下</h2><ol>
+<li>添加列<br>基本形式: alter table 表名 add 列名 列数据类型 [after 插入位置] ;<br>example:<br>在表的最后追加列 address:<br>alter table students add address char(60) ;<br>在名为 age 的列后插入列 birthday:<br>alter table students add birthday date after age ;  </li>
+<li>修改列<br>基本形式: alter table 表名 change 列名称 列新名称 新数据类型 ;<br>示例:<br>将表 tel 列改名为 telphone:<br>alter table students change tel telphone char(13) default “-“ ;<br>将 name 列的数据类型改为 char(16):<br>alter table students change name name char(16) not null ;  <ol start="3">
+<li>删除列<br>基本形式: alter table 表名 drop 列名称 ;<br>示例:<br>删除 birthday 列: alter table students drop birthday ;  </li>
+</ol>
+</li>
+<li>重命名表<br>基本形式: alter table 表名 rename 新表名 ;<br>示例:<br>重命名 students 表为 workmates:<br>alter table students rename workmates ;<br>5.删除整张表<br>基本形式: drop table 表名 ;<br>示例:<br>删除 workmates 表:<br>drop table workmates ;</li>
+<li>删除整个数据库<br>基本形式: drop database 数据库名 ;<br>示例:<br>删除 samp_db 数据库: drop database samp_db ;</li>
+</ol>
+
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2018年07月23日 18:15</p>
+        <p>原始链接： <a class="post-url" href="/2018/07/23/sql语句/" title="sql语句">http://paris-jee.github.io/2018/07/23/sql语句/</a></p>
+        <footer>
+            <a href="http://paris-jee.github.io">
+                <img src="/images/logo1.png" alt="Paris Jee">
+                Paris Jee
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+        
+            
+
+        
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://paris-jee.github.io/2018/07/23/sql语句/&title=《sql语句》 — 纪国锐&pic=images/1-14.jpg" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://paris-jee.github.io/2018/07/23/sql语句/&title=《sql语句》 — 纪国锐&source=" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://paris-jee.github.io/2018/07/23/sql语句/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《sql语句》 — 纪国锐&url=http://paris-jee.github.io/2018/07/23/sql语句/&via=http://paris-jee.github.io" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://paris-jee.github.io/2018/07/23/sql语句/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://paris-jee.github.io/2018/07/23/sql语句/" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/-数据库-MySQL/" class="color2">-数据库 -MySQL</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#SQL语句"><span class="post-toc-text">SQL语句</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#alter-table-语句用于创建后对表的修改-基础用法如下"><span class="post-toc-text">alter table 语句用于创建后对表的修改, 基础用法如下</span></a></li></ol></li></ol>
+        </nav>
+    </aside>
+    
+
+<nav id="article-nav">
+  
+    <a href="/2018/07/23/mysql进阶/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          mysql进阶
+        
+      </span>
+    </a>
+  
+  
+    <a href="/2018/07/23/mysql基础/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">mysql基础</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2018 Paris Jee<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "http://paris-jee.github.io",
+      animate: true,
+      isHome: false,
+      share: true,
+      reward: 2
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            <a class="category-link" href="/categories/HTTP/">HTTP</a><a class="category-link" href="/categories/JSON/">JSON</a><a class="category-link" href="/categories/Linux/">Linux</a><a class="category-link" href="/categories/PHP/">PHP</a><a class="category-link" href="/categories/ajax/">ajax</a><a class="category-link" href="/categories/git/">git</a><a class="category-link" href="/categories/mysql/">mysql</a><a class="category-link" href="/categories/php/">php</a><a class="category-link" href="/categories/协议/">协议</a><a class="category-link" href="/categories/数据库/">数据库</a>
+        </div>
+        <div id="sidebar-menu-box-tags">
+            <a href="/tags/HTTP协议/" style="font-size: 10px;">-HTTP协议</a> <a href="/tags/Linux/" style="font-size: 10px;">-Linux</a> <a href="/tags/Linux-文件系统/" style="font-size: 10px;">-Linux -文件系统</a> <a href="/tags/Linux命令/" style="font-size: 10px;">-Linux命令</a> <a href="/tags/PHP-设计模式/" style="font-size: 10px;">-PHP -设计模式</a> <a href="/tags/git-命令/" style="font-size: 10px;">-git -命令</a> <a href="/tags/协议-TCP-IP/" style="font-size: 10px;">-协议 -TCP/IP</a> <a href="/tags/数据库-MySQL/" style="font-size: 10px;">-数据库 -MySQL</a> <a href="/tags/面向对象/" style="font-size: 10px;">-面向对象</a> <a href="/tags/JSON/" style="font-size: 20px;">JSON</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/PHP-变量/" style="font-size: 10px;">PHP 变量</a> <a href="/tags/PHP-常量/" style="font-size: 10px;">PHP 常量</a> <a href="/tags/ajax-php/" style="font-size: 10px;">ajax php</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/php-Composer/" style="font-size: 10px;">php Composer</a> <a href="/tags/基本概念/" style="font-size: 10px;">基本概念</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a  href="/">
+                    <i class="fa fa-home"></i><span>Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/archives">
+                    <i class="fa fa-archive"></i><span>Archives</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/about">
+                    <i class="fa fa-user"></i><span>About</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            <a href="/tags/HTTP协议/" style="font-size: 10px;">-HTTP协议</a> <a href="/tags/Linux/" style="font-size: 10px;">-Linux</a> <a href="/tags/Linux-文件系统/" style="font-size: 10px;">-Linux -文件系统</a> <a href="/tags/Linux命令/" style="font-size: 10px;">-Linux命令</a> <a href="/tags/PHP-设计模式/" style="font-size: 10px;">-PHP -设计模式</a> <a href="/tags/git-命令/" style="font-size: 10px;">-git -命令</a> <a href="/tags/协议-TCP-IP/" style="font-size: 10px;">-协议 -TCP/IP</a> <a href="/tags/数据库-MySQL/" style="font-size: 10px;">-数据库 -MySQL</a> <a href="/tags/面向对象/" style="font-size: 10px;">-面向对象</a> <a href="/tags/JSON/" style="font-size: 20px;">JSON</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/PHP-变量/" style="font-size: 10px;">PHP 变量</a> <a href="/tags/PHP-常量/" style="font-size: 10px;">PHP 常量</a> <a href="/tags/ajax-php/" style="font-size: 10px;">ajax php</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/php-Composer/" style="font-size: 10px;">php Composer</a> <a href="/tags/基本概念/" style="font-size: 10px;">基本概念</a>
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+
+  <script src="/js/pop-img.js"></script>
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+
+  </div>
+</body>
+</html>

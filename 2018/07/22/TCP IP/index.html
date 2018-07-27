@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>TCP/IP | 纪国锐</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  
+    <meta name="keywords" content="Paris-Jee's Blog" />
+  
+  <meta name="description" content="TCP/IP TCP/IP（Transmission Control Protocol/Internet Protocol）是传输控制协议和网络协议的简称，它定义了电子设备如何连入因特网，以及数据如何在它们之间传输的标准。    TCP/IP 不是一个协议，而是一个协议族的统称，里面包括了 IP 协议、ICMP 协议、TCP 协议、以及 http、ftp、pop3、https 协议等。网络中的计算">
+<meta name="keywords" content="-协议 -TCP&#x2F;IP">
+<meta property="og:type" content="article">
+<meta property="og:title" content="TCP&#x2F;IP">
+<meta property="og:url" content="http://paris-jee.github.io/2018/07/22/TCP IP/index.html">
+<meta property="og:site_name" content="纪国锐">
+<meta property="og:description" content="TCP/IP TCP/IP（Transmission Control Protocol/Internet Protocol）是传输控制协议和网络协议的简称，它定义了电子设备如何连入因特网，以及数据如何在它们之间传输的标准。    TCP/IP 不是一个协议，而是一个协议族的统称，里面包括了 IP 协议、ICMP 协议、TCP 协议、以及 http、ftp、pop3、https 协议等。网络中的计算">
+<meta property="og:locale" content="default">
+<meta property="og:updated_time" content="2018-07-22T15:07:57.243Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="TCP&#x2F;IP">
+<meta name="twitter:description" content="TCP/IP TCP/IP（Transmission Control Protocol/Internet Protocol）是传输控制协议和网络协议的简称，它定义了电子设备如何连入因特网，以及数据如何在它们之间传输的标准。    TCP/IP 不是一个协议，而是一个协议族的统称，里面包括了 IP 协议、ICMP 协议、TCP 协议、以及 http、ftp、pop3、https 协议等。网络中的计算">
+  
+  
+    <link rel="icon" href="/favicon.ico">
+  
+  <link href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="/js/pace.min.js"></script>
+  
+
+  
+  
+
+</head>
+
+<body>
+  <div id="container">
+      <header id="header">
+    <div id="banner"></div>
+    <div id="header-outer">
+        <div id="header-menu" class="header-menu-pos animated">
+            <div class="header-menu-container">
+                <a href="/" class="left">
+                    <span class="site-title">纪国锐</span>
+                </a>
+                <nav id="header-menu-nav" class="right">
+                    
+                    <a  href="/">
+                        <i class="fa fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                    
+                    <a  href="/archives">
+                        <i class="fa fa-archive"></i>
+                        <span>Archives</span>
+                    </a>
+                    
+                    <a  href="/about">
+                        <i class="fa fa-user"></i>
+                        <span>About</span>
+                    </a>
+                    
+                </nav>
+                <a class="mobile-header-menu-button">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+        </div>
+        <div id="header-row">
+            <div id="logo">
+                <a href="/">
+                    <img src="/images/logo1.png" alt="logo">
+                </a>
+            </div>
+            <div class="header-info">
+                <div id="header-title">
+                    
+                    <h2>
+                        纪国锐
+                    </h2>
+                    
+                </div>
+                <div id="header-description">
+                    
+                    <h3>
+                        个人博客
+                    </h3>
+                    
+                </div>
+            </div>
+            <nav class="header-nav">
+                <div class="social">
+                    
+                        <a title="parisjee" target="_blank" href="//lilyzero.com">
+                            <i class="fa fa-home fa-2x"></i></a>
+                    
+                        <a title="Github" target="_blank" href="//github.com/paris-jee">
+                            <i class="fa fa-github fa-2x"></i></a>
+                    
+                        <a title="Weibo" target="_blank" href="//weibo.com/jigrui">
+                            <i class="fa fa-weibo fa-2x"></i></a>
+                    
+                        <a title="Twitter" target="_blank" href="//twitter.com/xiaolan1234">
+                            <i class="fa fa-twitter fa-2x"></i></a>
+                    
+                </div>
+            </nav>
+        </div>
+    </div>
+</header>
+      <div class="outer">
+        <section id="main" class="body-wrap"><article id="post-TCP IP" class="article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 class="post-title" itemprop="name">
+      TCP/IP
+    </h1>
+    <div class="post-title-bar">
+      <ul>
+          
+              <li>
+                  <i class="fa fa-book"></i>
+                  
+                      <a href="/categories/协议/">协议</a>
+                  
+              </li>
+          
+        <li>
+          <i class="fa fa-calendar"></i>  2018-07-22
+        </li>
+        <li>
+          <i class="fa fa-eye"></i>
+          <span id="busuanzi_value_page_pv"></span>
+        </li>
+      </ul>
+    </div>
+  
+
+          
+      </header>
+    
+    <div class="article-entry post-content" itemprop="articleBody">
+      
+            
+            <h1 id="TCP-IP"><a href="#TCP-IP" class="headerlink" title="TCP/IP"></a>TCP/IP</h1><blockquote>
+<p>TCP/IP（Transmission Control Protocol/Internet Protocol）是传输控制协议和网络协议的简称，它定义了电子设备如何连入因特网，以及数据如何在它们之间传输的标准。  </p>
+</blockquote>
+<p>TCP/IP 不是一个协议，而是一个协议族的统称，里面包括了 IP 协议、ICMP 协议、TCP 协议、以及 http、ftp、pop3、https 协议等。网络中的计算机都采用这套协议族进行互联。</p>
+<ul>
+<li>什么是TCP/IP模型？<br>TCP/IP模型是一系列网络协议的总称，这些协议的目的，就是使计算机之间可以进行信息交换。<br>所谓”协议”可以理解成机器之间交谈的语言，每一种协议都有自己的目的。TCP/IP模型一共包括几百种协议，对互联网上交换信息的各个方面都做了规定。  </li>
+<li>TCP/IP模型的四层结构</li>
+</ul>
+<ol>
+<li>连接层（Link Layer）<br>负责建立电路连接，是整个网络的物理基础，典型的协议包括以太网、ADSL等等</li>
+<li><p>网络层（Internet Layer）<br>负责分配地址和传送二进制数据，主要协议是IP协议,Ip协议和icmp协议。  </p>
+</li>
+<li><p>传输层（Transport Layer）<br>负责传送文本数据，主要协议是TCP协议,Tcp和udp协议。</p>
+</li>
+<li>应用层（Application Layer）<br>负责传送各种最终形态的数据，是直接与用户打交道的层，典型协议是HTTP、FTP等.  http超文本传输协议（这也是我们web应用传输的一个协议）；第二个是ftp协议（文件传输协议）；还有一种就是smtp（这是我们的简单邮件传输协议）。<br><code>设计互联网的原始目的，就是为了传输文本。所有协议最初都是为了这个目标而设计的，互联网架构的核心就是文本对话。</code><br>TCP协议<br>特点：面向连接的一种协议，这个面向连接就能够保证数据准确无误的，不会发生数据丢失的一种情况。<br><em>首先，这个A电脑发送一段数据到B电脑上，问这个B电脑在不在。如果这个B电脑能接收到这个数据，那么B电脑就会回一句话给A电脑（发一个数据过来），告诉A电脑：我在，你可以发数据过来。而这个A电脑接收了B电脑的数据过后，它还是再一次发送数据过去，告诉B电脑：我知道你在了，现在我们可以发数据了。那么，经过这三次发数据，它就能够保证数据准确无误传到B电脑上。这三次发数据其实就是我们平时所说的：三次握手。通过这三次握手，来保证不会发生数据丢包。</em><br>UDP协议<br>它的全称叫做：用户数据报协议。<br>它的英文名叫做：user data protocol。<br>特点：它就是更tcp恰好相反，它是面向无连接的一种协议。它不管对面到底在不在，它只管把这个数据包发出去。如果对面的电脑没在的话，它就把这个数据包丢掉。<br>区别：tcp面向连接，能保证数据能够准确无误的传到对方电脑上；（但是它的传输效率相对于udp，就要低一些，因为它要经过几次握手）<br>而这个udp的话，虽然说它的传输效率高，但是可能会发生数据丢包。</li>
+</ol>
+
+            <div class="post-copyright">
+    <div class="content">
+        <p>最后更新： 2018年07月22日 23:07</p>
+        <p>原始链接： <a class="post-url" href="/2018/07/22/TCP IP/" title="TCP/IP">http://paris-jee.github.io/2018/07/22/TCP IP/</a></p>
+        <footer>
+            <a href="http://paris-jee.github.io">
+                <img src="/images/logo1.png" alt="Paris Jee">
+                Paris Jee
+            </a>
+        </footer>
+    </div>
+</div>
+
+      
+        
+            
+
+        
+    </div>
+    <footer class="article-footer">
+        
+        
+<div class="post-share">
+    <a href="javascript:;" id="share-sub" class="post-share-fab">
+        <i class="fa fa-share-alt"></i>
+    </a>
+    <div class="post-share-list" id="share-list">
+        <ul class="share-icons">
+          <li>
+            <a class="weibo share-sns" target="_blank" href="http://service.weibo.com/share/share.php?url=http://paris-jee.github.io/2018/07/22/TCP IP/&title=《TCP/IP》 — 纪国锐&pic=images/11.jpg" data-title="微博">
+              <i class="fa fa-weibo"></i>
+            </a>
+          </li>
+          <li>
+            <a class="weixin share-sns" id="wxFab" href="javascript:;" data-title="微信">
+              <i class="fa fa-weixin"></i>
+            </a>
+          </li>
+          <li>
+            <a class="qq share-sns" target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://paris-jee.github.io/2018/07/22/TCP IP/&title=《TCP/IP》 — 纪国锐&source=" data-title="QQ">
+              <i class="fa fa-qq"></i>
+            </a>
+          </li>
+          <li>
+            <a class="facebook share-sns" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http://paris-jee.github.io/2018/07/22/TCP IP/" data-title="Facebook">
+              <i class="fa fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a class="twitter share-sns" target="_blank" href="https://twitter.com/intent/tweet?text=《TCP/IP》 — 纪国锐&url=http://paris-jee.github.io/2018/07/22/TCP IP/&via=http://paris-jee.github.io" data-title="Twitter">
+              <i class="fa fa-twitter"></i>
+            </a>
+          </li>
+          <li>
+            <a class="google share-sns" target="_blank" href="https://plus.google.com/share?url=http://paris-jee.github.io/2018/07/22/TCP IP/" data-title="Google+">
+              <i class="fa fa-google-plus"></i>
+            </a>
+          </li>
+        </ul>
+     </div>
+</div>
+<div class="post-modal wx-share" id="wxShare">
+    <a class="close" href="javascript:;" id="wxShare-close">×</a>
+    <p>扫一扫，分享到微信</p>
+    <img src="//api.qrserver.com/v1/create-qr-code/?data=http://paris-jee.github.io/2018/07/22/TCP IP/" alt="微信分享二维码">
+</div>
+
+<div class="mask"></div>
+
+        
+        <ul class="article-footer-menu">
+            
+            
+  <li class="article-footer-tags">
+    <i class="fa fa-tags"></i>
+      
+    <a href="/tags/-协议-TCP/IP/" class="color2">-协议 -TCP/IP</a>
+      
+  </li>
+
+        </ul>
+        
+    </footer>
+  </div>
+</article>
+
+
+    <aside class="post-toc-pos post-toc-top" id="post-toc">
+        <nav class="post-toc-wrap">
+            <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#TCP-IP"><span class="post-toc-text">TCP/IP</span></a></li></ol>
+        </nav>
+    </aside>
+    
+
+<nav id="article-nav">
+  
+    <a href="/2018/07/23/php设计模式/" id="article-nav-newer" class="article-nav-link-wrap">
+
+      <span class="article-nav-title">
+        <i class="fa fa-hand-o-left" aria-hidden="true"></i>
+        
+          php设计模式
+        
+      </span>
+    </a>
+  
+  
+    <a href="/2018/07/18/Linux-命令/" id="article-nav-older" class="article-nav-link-wrap">
+      <span class="article-nav-title">Linux 命令</span>
+      <i class="fa fa-hand-o-right" aria-hidden="true"></i>
+    </a>
+  
+</nav>
+
+
+
+    
+</section>
+        
+      </div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+<p>
+    <span id="busuanzi_container_site_uv" style='display:none'>
+        总访客数：<span id="busuanzi_value_site_uv"></span>
+    </span>
+    <span id="busuanzi_container_site_pv" style='display:none'>
+        总访问量：<span id="busuanzi_value_site_pv"></span>
+    </span>
+</p>
+
+
+      <p>
+        Powered by  <a href="http://hexo.io/" target="_blank">Hexo</a>
+        Theme <a href="//github.com/wongminho/hexo-theme-miho" target="_blank">MiHo</a>
+      &copy; 2018 Paris Jee<br>
+      </p>
+    </div>
+  </div>
+</footer>
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<script src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script>
+<script>
+  var mihoConfig = {
+      root: "http://paris-jee.github.io",
+      animate: true,
+      isHome: false,
+      share: true,
+      reward: 2
+  }
+</script>
+<div class="sidebar">
+    <div id="sidebar-search" title="Search">
+        <i class="fa fa-search"></i>
+    </div>
+    <div id="sidebar-category" title="Categories">
+        <i class="fa fa-book"></i>
+    </div>
+    <div id="sidebar-tag" title="Tags">
+        <i class="fa fa-tags"></i>
+    </div>
+    <div id="sidebar-top">
+        <span class="sidebar-top-icon"><i class="fa fa-angle-up"></i></span>
+    </div>
+</div>
+<div class="sidebar-menu-box" id="sidebar-menu-box">
+    <div class="sidebar-menu-box-container">
+        <div id="sidebar-menu-box-categories">
+            <a class="category-link" href="/categories/HTTP/">HTTP</a><a class="category-link" href="/categories/JSON/">JSON</a><a class="category-link" href="/categories/Linux/">Linux</a><a class="category-link" href="/categories/PHP/">PHP</a><a class="category-link" href="/categories/ajax/">ajax</a><a class="category-link" href="/categories/git/">git</a><a class="category-link" href="/categories/mysql/">mysql</a><a class="category-link" href="/categories/php/">php</a><a class="category-link" href="/categories/协议/">协议</a><a class="category-link" href="/categories/数据库/">数据库</a>
+        </div>
+        <div id="sidebar-menu-box-tags">
+            <a href="/tags/HTTP协议/" style="font-size: 10px;">-HTTP协议</a> <a href="/tags/Linux/" style="font-size: 10px;">-Linux</a> <a href="/tags/Linux-文件系统/" style="font-size: 10px;">-Linux -文件系统</a> <a href="/tags/Linux命令/" style="font-size: 10px;">-Linux命令</a> <a href="/tags/PHP-设计模式/" style="font-size: 10px;">-PHP -设计模式</a> <a href="/tags/git-命令/" style="font-size: 10px;">-git -命令</a> <a href="/tags/协议-TCP-IP/" style="font-size: 10px;">-协议 -TCP/IP</a> <a href="/tags/数据库-MySQL/" style="font-size: 10px;">-数据库 -MySQL</a> <a href="/tags/面向对象/" style="font-size: 10px;">-面向对象</a> <a href="/tags/JSON/" style="font-size: 20px;">JSON</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/PHP-变量/" style="font-size: 10px;">PHP 变量</a> <a href="/tags/PHP-常量/" style="font-size: 10px;">PHP 常量</a> <a href="/tags/ajax-php/" style="font-size: 10px;">ajax php</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/php-Composer/" style="font-size: 10px;">php Composer</a> <a href="/tags/基本概念/" style="font-size: 10px;">基本概念</a>
+        </div>
+    </div>
+    <a href="javascript:;" class="sidebar-menu-box-close">&times;</a>
+</div>
+<div class="mobile-header-menu-nav" id="mobile-header-menu-nav">
+    <div class="mobile-header-menu-container">
+        <span class="title">Menus</span>
+        <ul class="mobile-header-menu-navbar">
+            
+            <li>
+                <a  href="/">
+                    <i class="fa fa-home"></i><span>Home</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/archives">
+                    <i class="fa fa-archive"></i><span>Archives</span>
+                </a>
+            </li>
+            
+            <li>
+                <a  href="/about">
+                    <i class="fa fa-user"></i><span>About</span>
+                </a>
+            </li>
+            
+        </ul>
+    </div>
+    <div class="mobile-header-tag-container">
+        <span class="title">Tags</span>
+        <div id="mobile-header-container-tags">
+            <a href="/tags/HTTP协议/" style="font-size: 10px;">-HTTP协议</a> <a href="/tags/Linux/" style="font-size: 10px;">-Linux</a> <a href="/tags/Linux-文件系统/" style="font-size: 10px;">-Linux -文件系统</a> <a href="/tags/Linux命令/" style="font-size: 10px;">-Linux命令</a> <a href="/tags/PHP-设计模式/" style="font-size: 10px;">-PHP -设计模式</a> <a href="/tags/git-命令/" style="font-size: 10px;">-git -命令</a> <a href="/tags/协议-TCP-IP/" style="font-size: 10px;">-协议 -TCP/IP</a> <a href="/tags/数据库-MySQL/" style="font-size: 10px;">-数据库 -MySQL</a> <a href="/tags/面向对象/" style="font-size: 10px;">-面向对象</a> <a href="/tags/JSON/" style="font-size: 20px;">JSON</a> <a href="/tags/PHP/" style="font-size: 10px;">PHP</a> <a href="/tags/PHP-变量/" style="font-size: 10px;">PHP 变量</a> <a href="/tags/PHP-常量/" style="font-size: 10px;">PHP 常量</a> <a href="/tags/ajax-php/" style="font-size: 10px;">ajax php</a> <a href="/tags/mysql/" style="font-size: 10px;">mysql</a> <a href="/tags/php-Composer/" style="font-size: 10px;">php Composer</a> <a href="/tags/基本概念/" style="font-size: 10px;">基本概念</a>
+        </div>
+    </div>
+</div>
+<div class="search-wrap">
+    <span class="search-close">&times;</span>
+        <a href="javascript:;" class="header-icon waves-effect waves-circle waves-light" id="back">
+            <i class="icon icon-lg icon-chevron-left"></i>
+        </a>
+        <input class="search-field" placeholder="Search..." id="keywords">
+        <a id="search-submit" href="javascript:;">
+            <i class="fa fa-search"></i>
+        </a>
+    <div class="search-container" id="search-container">
+        <ul class="search-result" id="search-result">
+        </ul>
+    </div>
+</div>
+
+<div id="search-tpl">
+    <li class="search-result-item">
+        <a href="{url}" class="search-item-li">
+            <span class="search-item-li-title" title="{title}">{title}</span>
+        </a>
+    </li>
+</div>
+<script src="/js/search.js"></script>
+<script src="/js/main.js"></script>
+
+
+  <script src="//cdn.bootcss.com/particles.js/2.0.0/particles.min.js"></script>
+  <div id="particles"></div>
+  <script src="/js/particles.js"></script>
+
+
+
+
+
+
+
+  <link rel="stylesheet" href="//cdn.bootcss.com/animate.css/3.5.0/animate.min.css">
+  <script src="//cdn.bootcss.com/scrollReveal.js/3.0.5/scrollreveal.js"></script>
+  <script src="/js/animate.js"></script>
+
+
+  <script src="/js/pop-img.js"></script>
+  <script>
+     $(".article-entry p img").popImg();
+  </script>
+
+  </div>
+</body>
+</html>
